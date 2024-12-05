@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #605ea1; 
+    color: #e6e9af;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #22177a;
+    padding: 10px 0;
+    color: #e6e9af;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #e6e9af;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    width: max-content;
+    background-color: #8ea3a6; /* Board background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #d7bd3e;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+#winner {
+    color: #d7bd3e;
+}
+
+#status {
+    margin-top: 20px;
+}
+
+#restart {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #22177a;
+    color: #e6e9af;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#restart:hover {
+    background-color: #605ea1;
+}

@@ -1,0 +1,120 @@
+
+.hero {
+    background: url('me.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #8174A0;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #fff;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btn {
+    padding: 12px 25px;
+    background-color: #EFB6C8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #FFD2A0;
+    transform: scale(1.1);
+}
+
+.about {
+    background-color: #A888B5; 
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services {
+    background-color: #FFD2A0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services .service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    padding: 30px;
+    background-color: #EFB6C8;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services .service-item:hover {
+    transform: scale(1.05);
+}
+
+.services .service-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.services .service-item p {
+    font-size: 16px;
+    color: #777;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero-btn {
+        font-size: 16px;
+    }
+
+    .services .service-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
